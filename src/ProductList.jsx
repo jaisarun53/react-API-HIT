@@ -22,15 +22,7 @@ const ProductList = () => {
     <div>
       <h1>Product list</h1>
 
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "2rem",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
+      <div>
         {productList.map((item) => {
           return (
             <div
