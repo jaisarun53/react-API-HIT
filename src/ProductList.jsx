@@ -2,7 +2,6 @@ import React from "react";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import { CircularProgress, Button } from "@mui/material";
-import "./App.css";
 
 const ProductList = () => {
   const { isLoading, isError, error, data } = useQuery({
@@ -22,7 +21,15 @@ const ProductList = () => {
     <div>
       <h1>Product list</h1>
 
-      <div>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "2rem",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         {productList.map((item) => {
           return (
             <div
