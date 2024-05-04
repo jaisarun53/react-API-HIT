@@ -38,7 +38,6 @@ const ProductList = () => {
                 boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
                 width: "400px",
                 padding: "1rem",
-                maxHeight: "400px",
               }}
             >
               <img src={item.image} alt="" width="200px" height="200px" />
